@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Bootstrap</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<body style="margin: 50px;">
+	<p class="lead">你好，你好</p>
+<!--就是Bootstarp将h1-h6重构,而且还支持普通内联元素通过class="h1-h6"来实现相同的功能
+	<h1>bootstarp<small>框架</small></h1>
+	<h2>bootstarp<small>框架</small></h2>
+	<h3>bootstarp<small>框架</small></h3>
+	<h4>bootstarp<small>框架</small></h4>
+	<h5>bootstarp<small>框架</small></h5>
+	<h6>bootstarp<small>框架</small></h6>
+	<span class="h1">可以通过class来实现</span>
+
+	<ul class="list-unstyled list-inline">去除默认样式，变为内联
+		<li>4342342</li>
+		<li>23423</li>
+		<li>tyrty</li>
+		<li>fghf</li>
+		<li>dfs</li>
+
+	</ul>
+
+	<dl class="dl-horizontal">水平描述列表
+		<dt>你哈</dt>
+		<dd>我是真的开私信</dd>
+	</dl>
+	<table class="table table-striped table-bordered table-hover">
+		<thead>
+			<tr>
+				<th>编号</th>
+				<th>姓名</th>
+				<th>年龄</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="info sr-only">  对于状态类的要加在行中 还有active，success,warning  对于sr-only来说是隐藏，也是作用于tr
+				<td>1</td>
+				<td>杨景校</td>
+				<td>20</td>
+			</tr>
+			<tr class="danger">
+				<td>2</td>
+				<td>刘四女</td>
+				<td>47</td>
+			</tr>
+
+		</tbody>
+	</table>
+
+
+	<a href="###" class="btn btn-info btn-sm">dianji</a> 大号是lg小号是sm，超小号是xs，默认是中等号
+	<button class="btn btn-primary btn-lg">点击</button> 对于预定义的样式还有warning,danger,info,default,primary,link
+
+	<button class="btn btn-info btn-block active">点击</button>active是指处在按下的状态，还有disabled 就是直接将按钮禁止 ，也就是不可以按了-->
+
+
+
+		<!--但是转化 的时候当窗口到达移动端的到时候就又转化为block,让表单保持水平排列form-horizonatal-->
+	<form class="form-inline">
+		<!--from-group是为了给解决表单的间距问题，看起来更加干净，后面的has是校简状态，还有has-error,has-warning-->
+
+		<div class="form-group has-error">
+
+			<label class="control-label">电子邮件：</label>当使用了control-label时就是将当前的标签的样式和父元素的样式同步
+			<input type="email" placeholder="请输入您的电子邮件" class="form-control"/>
+		</div>
+		<div class="form-group">
+			
+	
+			<label>密码：</label>
+			<input type="password" placeholder="请输入您的密码" class="form-control"/>
+		</div>
+		<div class="input-group">
+			<div class="input-group-addon">$</div>
+			<input type="text" placeholder="请输入价格" class="form-control input-lg"/>
+			<div class="input-group-addon">.00</div>
+		</div>
+	</form>
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
