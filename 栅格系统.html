@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<style type="text/css">
+		.a{
+			height: 50px;
+			background: #eee;
+			border:1px solid #ccc;
+		}
+	</style>
+</head>
+<body>
+
+	<!--<div class="container">
+		<div class="row">
+			<div class="col-md-1 a">1</div>
+			<div class="col-md-1 a">1</div>
+			<div class="col-md-1 a">1</div>
+			<div class="col-md-1 a">1</div>
+			<div class="col-md-1 a">1</div>
+			<div class="col-md-1 a">1</div>
+			<div class="col-md-1 a">1</div>
+			<div class="col-md-1 a">1</div>
+			<div class="col-md-1 a">1</div>
+			<div class="col-md-1 a">1</div>
+			<div class="col-md-1 a">1</div>
+			<div class="col-md-1 a">1</div>
+
+		</div>
+		<div class="row">
+			<div class="col-md-4 a">1</div>
+			<div class="col-md-4 a">1</div>
+			<div class="col-md-4 a">1</div>
+
+		</div>
+		<div class="row">
+			<div class="col-md-9 a">1</div>
+			<div class="col-md-3 a">1</div>
+		</div>
+	</div>-->
+
+	<!--<div class="container">
+		<div class="row"> row是一行有12列 就这样分，下面的数字是指一个单元占几列 
+			<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 a">1</div>
+			<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 a">1</div>
+			<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 a">1</div>
+			<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 a">1</div>
+			<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 a">1</div>
+			<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 a">1</div>
+
+
+		</div>
+	</div>-->
+
+	<!--<div class="container">
+		<div class="row">
+			<div class="col-md-9 a " style="padding: 0;">当一个行时就会自动在左右空出相同的距离，所以在用嵌套时 在用一个padding：0 将左右的空隙清除 ，对于嵌套就是将父级元素又看成一行 产生12列
+				<div class="col-md-4 a"></div>
+				<div class="col-md-4 a"></div>
+				<div class="col-md-4 a"></div>
+
+			</div>
+			<div class="col-md-3 a"></div>
+		</div>
+	</div>-->
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-9 col-md-push-3 a">9</div><!--左移是push-->
+			<div class="col-md-3 col-md-pull-9 a">3</div><!--右移是pull-->
+
+		</div>
+	</div>
+
+</body>
+</html>
