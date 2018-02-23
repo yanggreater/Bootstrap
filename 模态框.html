@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>模态框</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+</head>
+<body>
+	<!--模态框声明-->
+	<div class="modal fade" id="mymodal" tabindex="-1">
+		<!--窗口声明-->
+		<div class="modal-dialog">
+			<!--内容声明-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button class="close" data-dismiss="modal"><span>&times;</span></button>
+					<h4 class="modal-title">标题</h4>
+
+				</div>
+				<div class="modal-body">
+					你好，请登录
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-default">注册</button>
+					<button class="btn btn-primary">登录</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<!--用法 data-toggle是指触发的class类型  data-target是指触发的对像  data-dismiss 是指清除的class类型  data-backdrop="" 如果是false那么不会有黑色的背景，而且点击背景不会关闭  static的话有黑色背景 但是点击背景不会关闭 
+data-keyboard=""等于true的话 按esc会关闭 -->
+	<button class="btn btn-info" data-toggle="modal" data-target="#mymodal">点击登录</button>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

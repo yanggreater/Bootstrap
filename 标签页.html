@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>标签页</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript">
+		window.onload=function(){//js实现原有的data-toggle
+			$('#nav a').on('click',function(e){
+				e.preventDefault();//阻止默认行为
+				$(this).tab('show');
+			})
+		}
+	</script>
+
+</head>
+<body style="padding: 100px;">
+
+	<ul class="nav nav-tabs" id="nav">
+		<li class="active"><a href="#HTML5" >HTML5</a></li>
+		<li><a href="#Bootstrap" >Bootstrap</a></li>
+		<li><a href="#Jquary" >Jquary</a></li>
+		<li><a href="#CSS3" >CSS3</a></li>
+	</ul>
+
+	<ul class="nav nav-pills"><!--胶囊式导航条-->
+		<li class="active"><a href="#HTML5" data-toggle="tab">HTML5</a></li>
+		<li><a href="#Bootstrap" data-toggle="tab">Bootstrap</a></li>
+		<li><a href="#Jquary" data-toggle="tab">Jquary</a></li>
+		<li><a href="#CSS3" data-toggle="tab">CSS3</a></li>
+	</ul>
+
+	<div class="tab-content">
+		<p class="tab-pane active fade in" id="HTML5">你是我的小呀小苹果，就想天边最美的云朵</p>
+		<p class="tab-pane fade" id="Bootstrap">你说你是雨，淋湿我的眼睛，化作一道痕迹换不回你</p>
+		<p class="tab-pane fade" id="Jquary">快要过去天空好像下雨，我好像住你隔壁，夏天</p>
+		<p class="tab-pane fade" id="CSS3">二位额哦哦机加工我绝佳的法国伍家岗很的哈吧好末日据统计我我佳士科技奇偶就流口水的减肥了睡懒觉了罚款多少级了我就立刻忘记了服务监控软件来我家而困扰我加了人家胃口了进入另外就饿了</p>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
