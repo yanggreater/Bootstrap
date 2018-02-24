@@ -1,0 +1,11 @@
+.carousel-inner{
+	margin: 50px 0 0 0;
+}
+#myCollapse{
+	width: 1080px;
+	margin: 0 auto;
+}
+#myCollapse a span{
+	font-size: 40px;
+	line-height: 432px;
+}
